@@ -1,0 +1,111 @@
+<!-- Through pressing "!"  we created the framework for a html page -->
+<!-- To run the html page we need an extention which is called "Live Server" -->
+
+<!-- Technical documentation libary: https://hackr.io/blog/html-projects-->
+<html>
+<!--This example uses the default bootstrap stylesheet-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 col-sm-12 col-xs-12">
+            <nav id="navbar">
+                <h3>Face Swap Program documenation</h3>
+                <!--content stacking for smaller screens-->
+                <ul class="nav nav-pills nav-stacked">
+                 <!--internal linking to the respective sections-->
+                    <a class="nav-link" href="#Introduction" rel="internal">
+                        <li>Introduction</li>
+                    </a>
+                    <a class="nav-link" href="Background information before getting into the topic:" rel="internal">
+                        <li>The simplyfied logic behind the code</li>
+                    </a>
+                    <a class="nav-link" href="#About_Topic" rel="internal">
+                        <li>About the topic</li>
+                    </a>
+                    <a class="nav-link" href="#Topic_1" rel="internal">
+                        <li>Topic 1</li>
+                    </a>
+                    <a class="nav-link" href="#Topic_2" rel="internal">
+                        <li>Topic 2</li>
+                    </a>
+                 </ul>
+            </nav>
+        </div>
+        <div class="col-md-10 col-sm-12 col-xs-12">
+            <main id="main-doc">
+                <section class="main-section" id="Introduction" >
+                 <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <h3 style = "background: black; color: white">Introduction</h3>
+                    <article>
+                    <p>This documentation describes our project we did in the first two weeks of our internship:
+                    <p>The task was to make a video of ourself and let our partner take a picture of himself. With those two </p>
+                    <p>inputs and a small amount of code, we then should be able to swap the face in the video with the </p> 
+                    <p>face on the photo. That’s it...</p>
+                        </article>
+                </section>
+                <section class="main-section" id="What_you_should_already_know">
+                    <h3 style = "background: black; color: white">What you should already know</h3>
+                    <article>
+                        
+<!--creating list using html-->
+                        <ol>
+                            <li>
+                                A video consists of many frames. Those frames are just the number of times images are flashed 
+                                on a screen during a given second to give the illusion of movement. To be able to work with the 
+                                video, we now had to split it into many frames and work on those pictures one after another.
+                            </li>
+                            <li>
+                                To have a consistency in every picture it was necessary to have the face always in the same 
+                                position in the image. To accomplish this we zoomed into the picture so that only the face and 
+                                nothing more is fitting into it. 
+                            </li>
+                            <li>
+                                If that was done on every frames separately we are know able to put the frames back together. 
+                            </li>
+                            <li>
+                                After that milestone we know take our picture and also zoom into it, know the picture should  
+                                contain only the face and no other surroundings.
+                            </li>
+                            <li>
+                                At the end our algorithm takes those two documents and exchanges the faces.
+                            </li>
+                        </ol>
+
+                        </artice>
+                </section>
+                <section class="main-section" id="About_Topic">
+                    <h3 style = "background: black; color: white">About topic</h3>
+                    <article>
+                        <p>More lines about the topic. For example, how the basic functionality works, features etc...</p>
+                        <p>
+                        Technical documentation should be thorough and to the point
+                        </p>
+                        <p>
+                        Write about features, comparisons with other languages etc
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Topic_1">
+                    <h3 style = "background: black; color: white">Topic 1</h3>
+                    <article>
+                        Getting started with the actual documentation content
+                        <code>This would come in a different color and font indicating lines of code
+                        </code>
+                    </article>
+                </section>
+                <section class="main-section" id="Topic_2">
+                    <h3 style = "background: black; color: white">Topic 2</h3>
+                    <p>
+Another topic about the main topic, for example, if the topic is Java, this could be variables or data types in Java
+                    </p>
+                </section>
+            </main>
+        </div>
+    </div>
+</div>
+</html>
+
+    <!-- With this shortcut we are able to execute the javascript code form another file -->
+    <!-- <script src = "FS.js"></script> -->
